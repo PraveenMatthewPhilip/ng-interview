@@ -1,38 +1,5 @@
-ul {
-  @apply space-y-2 pb-2;
-}
-ul li a {
-  @apply text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100;
-}
-.pill {
-  @apply bg-gray-200 text-gray-800 ml-3 text-sm font-medium inline-flex items-center justify-center px-2 rounded-full;
-}
-.label {
-  @apply ml-3;
-}
-
-#sidebarBackdrop {
-  @apply bg-gray-900 opacity-50 hidden fixed inset-0 z-10;
-}
-
-#sidebar {
-  @apply fixed hidden z-20 h-full top-0 left-0 pt-16 flex lg:flex flex-shrink-0 flex-col w-64 transition-width duration-75;
-}
-
 .transition-width {
   transition-duration: 0.15s;
   transition-property: width;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sidebar-menu {
-  @apply relative flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white pt-0;
-}
-
-.sidebar-menu__outer {
-  @apply flex-1 flex flex-col pt-5 pb-4 overflow-y-auto;
-}
-
-.sidebar-menu__inner {
-  @apply flex-1 px-3 bg-white divide-y space-y-1;
 }

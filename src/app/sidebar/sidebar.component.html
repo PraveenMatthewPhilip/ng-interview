@@ -1,8 +1,14 @@
-<aside id="sidebar" aria-label="Sidebar" class="transition-width">
-  <div class="sidebar-menu">
-    <div class="sidebar-menu__outer">
-      <div class="sidebar-menu__inner">
-        <ul>
+<aside
+  id="sidebar"
+  aria-label="Sidebar"
+  class="fixed hidden z-20 h-full top-0 left-0 pt-16 flex lg:flex flex-shrink-0 flex-col w-64 transition-width duration-75"
+>
+  <div
+    class="relative flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white pt-0"
+  >
+    <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+      <div class="flex-1 px-3 bg-white divide-y space-y-1">
+        <ul class="space-y-2 pb-2">
           <li>
             <form action="#" method="GET" class="lg:hidden">
               <label for="mobile-search" class="sr-only">Search</label>
@@ -32,10 +38,16 @@
             </form>
           </li>
           <li *ngFor="let option of menuOptions">
-            <a [href]="option.link" class="group">
+            <a
+              [href]="option.link"
+              class="group text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100"
+            >
               <fa-icon [icon]="option.icon"></fa-icon>
-              <span class="label">{{ option.name }}</span>
-              <span class="pill">{{ option.pill }}</span>
+              <span class="ml-3">{{ option.name }}</span>
+              <span
+                class="bg-gray-200 text-gray-800 ml-3 text-sm font-medium inline-flex items-center justify-center px-2 rounded-full"
+                >{{ option.pill }}</span
+              >
             </a>
           </li>
         </ul>
@@ -44,4 +56,7 @@
   </div>
 </aside>
 
-<div id="sidebarBackdrop"></div>
+<div
+  id="sidebarBackdrop"
+  class="bg-gray-900 opacity-50 hidden fixed inset-0 z-10"
+></div>
