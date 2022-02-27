@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-infocard',
   templateUrl: './infocard.component.html',
-  styleUrls: ['./infocard.component.css']
+  styleUrls: ['./infocard.component.scss'],
 })
 export class InfocardComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
