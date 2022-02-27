@@ -1,2 +1,9 @@
-<app-navbar></app-navbar> <app-content></app-content>
+<div class="flex h-screen">
+  <div class="w-1/4"><app-sidebar></app-sidebar></div>
+  <div class="w-3/4">
+    <app-content></app-content>
+    <app-table></app-table>
+  </div>
+</div>
+
 <router-outlet></router-outlet>

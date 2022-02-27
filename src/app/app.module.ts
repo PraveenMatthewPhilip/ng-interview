@@ -7,27 +7,14 @@ import { FormsModule } from '@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
-import { CardComponent } from './card/card.component';
-import { TableComponent } from './table/table.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { LoginComponent } from './login/login.component';
+import { ContentComponent } from './content/content.component';
+import { InfocardComponent } from './infocard/infocard.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    HeaderComponent,
-    ContentComponent,
-    CardComponent,
-    TableComponent,
-    NavbarComponent,
-    SidebarComponent,
-    LoginComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent, SidebarComponent, ContentComponent, InfocardComponent, TableComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
