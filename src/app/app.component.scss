@@ -1,0 +1,11 @@
+#container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+}
+#sidebar {
+  width: 25%;
+}
+#content {
+  width: 75%;
+}

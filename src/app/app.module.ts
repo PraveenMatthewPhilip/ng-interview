@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { OrderListModule } from 'primeng/orderlist';
+import { Button, ButtonModule } from 'primeng/button';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -35,6 +36,7 @@ import { ProductService } from './productservice.service';
     HttpClientModule,
     OrderListModule,
     BrowserAnimationsModule,
+    ButtonModule,
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],

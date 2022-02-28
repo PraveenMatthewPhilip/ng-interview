@@ -3,7 +3,9 @@ import { Injectable } from '@angular/core';
 
 import { Product } from './product';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class ProductService {
   status: string[] = ['OUTOFSTOCK', 'INSTOCK', 'LOWSTOCK'];
 
