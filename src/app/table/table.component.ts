@@ -14,14 +14,12 @@ export class TableComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
-    this.productService
-      .getProductsSmall()
-      .then(
-        (cars) =>
-          (this.products = cars.map((item) => ({
-            ...item,
-            inventoryStatus: 'INSTOCK',
-          })))
-      );
+    this.productService.getProductsSmall().subscribe(
+      (product) =>
+        (this.products = product.map((item) => ({
+          ...item,
+          inventoryStatus: 'INSTOCK',
+        })))
+    );
   }
 }
