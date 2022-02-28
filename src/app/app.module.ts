@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { OrderListModule } from 'primeng/orderlist';
-import { Button, ButtonModule } from 'primeng/button';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { RatingModule } from 'primeng/rating';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -37,6 +39,8 @@ import { ProductService } from './productservice.service';
     OrderListModule,
     BrowserAnimationsModule,
     ButtonModule,
+    TableModule,
+    RatingModule,
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],
