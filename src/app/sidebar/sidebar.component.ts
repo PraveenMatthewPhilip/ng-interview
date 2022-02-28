@@ -12,16 +12,19 @@ export class SidebarComponent implements OnInit {
       name: 'Dashboard',
       icon: 'pi pi-chart-line',
       count: 0,
+      link: '/',
     },
     {
       name: 'Products',
       icon: 'pi pi-book',
       count: 0,
+      link: '/products',
     },
     {
       name: 'Users',
       icon: 'pi pi-user',
       count: 0,
+      link: '/users',
     },
   ];
   constructor() {}

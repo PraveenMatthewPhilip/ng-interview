@@ -5,7 +5,7 @@
         <span> Interview </span>
       </div>
       <nav class="navigation">
-        <a href="#" *ngFor="let option of menuOptions">
+        <a [href]="option.link" *ngFor="let option of menuOptions">
           <i [ngClass]="option.icon"></i>
           <span class="navigation__label">{{ option.name }}</span>
           <span class="navigation__pill" *ngIf="option.count > 0">

@@ -10,7 +10,6 @@ import { FormsModule } from '@angular/forms';
 import { OrderListModule } from 'primeng/orderlist';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
-import { RatingModule } from 'primeng/rating';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -18,8 +17,11 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { InfocardComponent } from './infocard/infocard.component';
-import { TableComponent } from './table/table.component';
+
 import { ProductService } from './productservice.service';
+
+import { ProductsModule } from './products/products.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,6 @@ import { ProductService } from './productservice.service';
     SidebarComponent,
     ContentComponent,
     InfocardComponent,
-    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ import { ProductService } from './productservice.service';
     BrowserAnimationsModule,
     ButtonModule,
     TableModule,
-    RatingModule,
+    ProductsModule,
+    DashboardModule,
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],
