@@ -12,6 +12,7 @@ import { CommonPartsModule } from './common/commonparts.module';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [AppComponent, NotfoundComponent],
@@ -20,6 +21,7 @@ import { RippleModule } from 'primeng/ripple';
     HttpClientModule,
     BrowserAnimationsModule,
     RippleModule,
+    ButtonModule,
     AppRoutingModule,
     ProductsModule,
     DashboardModule,
