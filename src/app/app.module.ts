@@ -11,12 +11,15 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { CommonPartsModule } from './common/commonparts.module';
 import { NotfoundComponent } from './notfound/notfound.component';
 
+import { RippleModule } from 'primeng/ripple';
+
 @NgModule({
   declarations: [AppComponent, NotfoundComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    RippleModule,
     AppRoutingModule,
     ProductsModule,
     DashboardModule,
