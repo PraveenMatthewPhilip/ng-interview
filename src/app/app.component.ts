@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PrimeNGConfig } from 'primeng/api';
+import 'core-js/features/reflect';
 
 @Component({
   selector: 'app-root',
