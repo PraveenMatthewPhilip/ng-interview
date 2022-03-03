@@ -13,24 +13,19 @@ import { TableModule } from 'primeng/table';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ContentComponent } from './content/content.component';
-import { InfocardComponent } from './infocard/infocard.component';
 
 import { ProductService } from './productservice.service';
 
 import { ProductsModule } from './products/products.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { ConfirmationService, MessageService } from 'primeng/api';
+import { RippleModule } from 'primeng/ripple';
+import { SignInComponent } from './common/sign-in/sign-in.component';
+import { CommonPartsModule } from './common/commonparts.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    SidebarComponent,
-    ContentComponent,
-    InfocardComponent,
-  ],
+  declarations: [AppComponent, SidebarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -43,8 +38,10 @@ import { DashboardModule } from './dashboard/dashboard.module';
     TableModule,
     ProductsModule,
     DashboardModule,
+    RippleModule,
+    CommonPartsModule,
   ],
-  providers: [ProductService],
+  providers: [ProductService, MessageService, ConfirmationService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

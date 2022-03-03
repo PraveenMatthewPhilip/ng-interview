@@ -1,7 +1,7 @@
 <p-table [value]="products" responsiveLayout="scroll">
   <ng-template pTemplate="caption">
     <div class="flex align-items-center justify-content-between">
-      Products
+      Products ({{ products ? products.length : 0 }})
       <p-button icon="pi pi-refresh"></p-button>
     </div>
   </ng-template>
@@ -18,7 +18,7 @@
   <ng-template pTemplate="body" let-product>
     <tr>
       <td>
-        {{ product.title.substring(0, 10) }}
+        {{ product.name.substring(0, 10) }}
         <span *ngIf="product.title.length > 10">...</span>
       </td>
       <td>
@@ -27,7 +27,6 @@
           [alt]="product.title"
           width="50"
           height="50"
-          class="shadow-4"
         />
       </td>
       <td>{{ product.price | currency: "USD" }}</td>

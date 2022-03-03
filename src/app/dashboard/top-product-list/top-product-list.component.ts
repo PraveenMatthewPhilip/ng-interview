@@ -13,10 +13,11 @@ export class TopProductListComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
-    this.productService.getProductsSmall().subscribe(
+    this.productService.getProducts().subscribe(
       (product) =>
         (this.products = product.map((item) => ({
           ...item,
+          name: item.title,
           inventoryStatus: ['INSTOCK', 'LOWSTOCK', 'OUTOFSTOCK'][
             Math.floor(Math.random() * 3)
           ],

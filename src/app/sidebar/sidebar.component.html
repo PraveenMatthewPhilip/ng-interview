@@ -15,6 +15,29 @@
           </span>
         </a>
       </nav>
+      <button
+        *ngIf="!signedin"
+        pButton
+        pRipple
+        label="Sign In"
+        icon="pi pi-user"
+        class="w-full"
+        (click)="signInDialog = true"
+      ></button>
+      <button
+        *ngIf="signedin"
+        pButton
+        pRipple
+        label="Sign Out"
+        icon="pi pi-user"
+        class="w-full"
+        (click)="signInDialog = true"
+      ></button>
     </div>
   </div>
 </div>
+
+<app-sign-in
+  [signInDialog]="signInDialog"
+  (closeSignIn)="closeSignIn($event)"
+></app-sign-in>

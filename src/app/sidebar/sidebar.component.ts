@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PrimeIcons } from 'primeng/api';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,6 +6,8 @@ import { PrimeIcons } from 'primeng/api';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
+  signedin = false;
+  signInDialog = false;
   menuOptions = [
     {
       name: 'Dashboard',
@@ -27,6 +28,12 @@ export class SidebarComponent implements OnInit {
       link: '/users',
     },
   ];
+
+  closeSignIn(signInFlag) {
+    console.log('Sign In Flag', signInFlag);
+    this.signInDialog = !signInFlag;
+    this.signedin = true;
+  }
   constructor() {}
 
   ngOnInit(): void {}

@@ -12,7 +12,7 @@ import { Product } from './product';
 export class ProductService {
   constructor(private http: HttpClient) {}
 
-  getProductsSmall(): Observable<Product[]> {
+  getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>('https://fakestoreapi.com/products');
   }
 }
