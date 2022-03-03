@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 10rem auto;
+}
+
+.empty-header {
+  margin: 0 0 1rem;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #626976;
+}
+
+.empty-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.empty-subtitle,
+.empty-title {
+  margin: 0 0 0.5rem;
+}
+
+.text-muted {
+  color: #626976 !important;
+}
+.home {
+  margin-top: 01.5rem;
+}

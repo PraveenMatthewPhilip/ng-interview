@@ -8,9 +8,15 @@ import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 
 import { CheckboxModule } from 'primeng/checkbox';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [InfoCardComponent, SignInComponent, SignInComponent],
+  declarations: [
+    InfoCardComponent,
+    SignInComponent,
+    SignInComponent,
+    SidebarComponent,
+  ],
   imports: [
     CommonModule,
     DialogModule,
@@ -18,6 +24,6 @@ import { CheckboxModule } from 'primeng/checkbox';
     ButtonModule,
     CheckboxModule,
   ],
-  exports: [InfoCardComponent, SignInComponent],
+  exports: [InfoCardComponent, SignInComponent, SidebarComponent],
 })
 export class CommonPartsModule {}

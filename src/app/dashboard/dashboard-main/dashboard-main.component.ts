@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard-main.component.scss'],
 })
 export class DashboardMainComponent implements OnInit {
-  cards = [
+  productCards = [
     {
       number: Math.floor(Math.random() * 15000),
       text: 'Sales this week',
@@ -23,6 +23,8 @@ export class DashboardMainComponent implements OnInit {
         Math.floor(Math.random() * 2)
       ],
     },
+  ];
+  randomNumberCard = [
     {
       number: Math.floor(Math.random() * 20),
       text: 'Top products this week',

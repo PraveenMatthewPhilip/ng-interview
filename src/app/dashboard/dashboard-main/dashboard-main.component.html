@@ -1,5 +1,29 @@
 <div class="grid">
-  <app-info-card *ngFor="let card of cards" [card]="card"></app-info-card>
+  <app-info-card
+    [card]="{
+      number: 'To Do',
+      text: 'Fill Data From Component',
+      pecentage: 'x',
+      icon: 'pi pi-arrow-up'
+    }"
+  ></app-info-card>
+  <app-info-card
+    [card]="{
+      number: 'To DO',
+      text: 'Fill Data From Component',
+      pecentage: 'x',
+      icon: 'pi pi-arrow-up'
+    }"
+  ></app-info-card>
+
+  <app-info-card
+    [card]="{
+      number: 'To Do',
+      text: 'Fill Data From Component',
+      pecentage: 'x',
+      icon: 'pi pi-arrow-up'
+    }"
+  ></app-info-card>
 </div>
 
 <app-top-product-list></app-top-product-list>

@@ -2,7 +2,7 @@
   <div class="sidebar__inner">
     <div class="sidebar__main">
       <div class="sidebar__logo">
-        <span> Interview </span>
+        <span> Interview Challenge</span>
       </div>
       <nav class="navigation">
         <a [href]="option.link" *ngFor="let option of menuOptions">
@@ -21,7 +21,7 @@
         pRipple
         label="Sign In"
         icon="pi pi-user"
-        class="w-full"
+        class="w-80"
         (click)="signInDialog = true"
       ></button>
       <button
@@ -30,7 +30,7 @@
         pRipple
         label="Sign Out"
         icon="pi pi-user"
-        class="w-full"
+        class="w-80"
         (click)="signInDialog = true"
       ></button>
     </div>

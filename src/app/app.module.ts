@@ -13,8 +13,6 @@ import { TableModule } from 'primeng/table';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { SidebarComponent } from './sidebar/sidebar.component';
-
 import { ProductService } from './productservice.service';
 
 import { ProductsModule } from './products/products.module';
@@ -23,9 +21,10 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { RippleModule } from 'primeng/ripple';
 import { SignInComponent } from './common/sign-in/sign-in.component';
 import { CommonPartsModule } from './common/commonparts.module';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent],
+  declarations: [AppComponent, NotfoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

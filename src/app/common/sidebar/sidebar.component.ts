@@ -13,7 +13,7 @@ export class SidebarComponent implements OnInit {
       name: 'Dashboard',
       icon: 'pi pi-chart-line',
       count: 0,
-      link: '/',
+      link: '/dashboard',
     },
     {
       name: 'Products',
