@@ -1,4 +1,5 @@
 <div class="grid">
+  <!-- *** START Challenge 1 - Replace the below 2 cards with Strcutural Directive (productCards variable) *** -->
   <app-info-card
     [card]="{
       number: 'To Do',
@@ -7,6 +8,18 @@
       icon: 'pi pi-arrow-up'
     }"
   ></app-info-card>
+  <app-info-card
+    [card]="{
+      number: 'To Do',
+      text: 'Fill Data From Component',
+      pecentage: 'x',
+      icon: 'pi pi-arrow-up'
+    }"
+  ></app-info-card>
+  <!-- *** END Challenge 1 *** -->
+
+  <!-- *** START Challenge 2 - Replace the below card with Strcutural Directive (randomNumberCard variable),
+    On Click of the card the random number should be generated  *** -->
   <app-info-card
     [card]="{
       number: 'To Do',
@@ -16,14 +29,7 @@
     }"
   ></app-info-card>
 
-  <app-info-card
-    [card]="{
-      number: 'To Do',
-      text: 'Fill Data From Component',
-      pecentage: 'x',
-      icon: 'pi pi-arrow-up'
-    }"
-  ></app-info-card>
+  <!-- *** END Challenge 2 *** -->
 </div>
 
 <app-top-product-list></app-top-product-list>

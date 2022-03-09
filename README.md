@@ -6,22 +6,34 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Challenge 1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Replace the 2 cards marked in `app/dashboard/dashbaord-main/dashboard-main.component.html` with Strcutural Directive (productCards variable)
 
-## Build
+## Challenge 2
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Replace the card marked in `app/dashboard/dashboard-main/dashboard-main.component.html` with Strcutural Directive (randomNumberCard variable)
+On click of the card the random number should be generated
 
-## Running unit tests
+## Challenge 3
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Number of products displayed in the top products table in `app/dashboard/top-product-list/top-product-list-component.html` should be
+linked to the random number generated in Challenge 2
 
-## Running end-to-end tests
+## Challenge 4
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Products tab in the side bar displays not found page due to a bug
 
-## Further help
+## Challenge 5
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+On navigating tabs the page reloads due to a bug, click on sign in and you can notice that the state goes off when page navigated.
+
+## Challenge 6
+
+Sign in takes blank email and password prevent submission when page form is not filled.
+
+## Challenge 7
+
+Using `https://reqres.in/api/users?page=1` API ,create a service ,add a new module users,add a component within it, and display list of users in the created component.
+
+Add appropriate routing also to display the content on /users route
